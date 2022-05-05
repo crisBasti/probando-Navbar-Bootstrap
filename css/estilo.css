@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(104, 201, 68);
+    background: black;
+}
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    background: green!important;
+}
+.img__logoPrincipal {
+    width: 400px;
+    height: 150px;
+}
+
+.navbar-nav {
+    margin-right: 0;
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+}
+
+.caja__padre {
+    padding: 20px;
+    display: flex;
+    /* flex-wrap: nowrap; */
+}
+.targetas {
+    box-shadow: 0, 0, 0, 0;
+    margin: auto;
+    width: 200px;
+    height: fit-content;
+    border: 5px solid;
+    border-image: linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
+    animation: rotate 2.5s ease-in infinite;
+}
+@keyframes rotate {
+    50%{
+        border-image: linear-gradient(360deg, #ff512f, #24dd40, #1c64ff) 1;
+    }
+    60%{
+        box-shadow: 0 0 10px #ffffff, 0 0 30px #fb0071, 0 0 60px #1cff6b;
+    }
+}
+
+.img__hamburguesas {
+    width: 90%;
+    height: 200px;
+}
+.targetas > .img__hamburguesas p {
+    margin: 0 auto;
+}
+
+footer picture .mp__logo {
+    width: 50px;
+    height: 50px;
+}
